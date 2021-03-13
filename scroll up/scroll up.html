@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
+        .main-scroll-up > nav {
+            position: sticky;
+            top: 2rem;
+            align-self: start;
+        }
+        .section-nav li.active > a {
+            color: #fff;
+            font-weight: 500;
+        }
+        .section-nav {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-left: 0;   
+        }
+        .section-nav ol{
+            position: relative;
+            border-left: 1px solid #727272;
+        }
+        .section-nav ol li a i{
+            margin-right: 20px;
+        }
+        .section-nav a {
+            text-decoration: none;
+            display: block;
+            padding: .125rem 0;
+            color: #727272;
+            transition: all 50ms ease-in-out;
+            font-family: 'Work Sans', sans-serif !important;
+            font-size: 35px;
+            line-height: 40px;
+            font-weight: 700;
+            border-left: 1px solid #727272 !important;
+            padding-left: 40px;
+            margin-left: -1px;
+        }
+        .section-nav a:hover,
+        .section-nav a:focus {
+            color: #fff;
+            font-size: 35px;
+            line-height: 40px;
+            font-weight: 700;
+        }
+        .section-nav li.active a{
+            transition: all 0.3 ease;
+            margin-left: -2px;
+            border-left: 3px solid #26C6BA !important;
+        }
+        .content-height{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+        }
+        .content-height h2{
+            font-size: 35px !important;
+            line-height: 40px;
+            font-weight: 800;
+            font-family: 'Work Sans', sans-serif;
+            margin: 0; 
+        }
+        .content-height p{
+            font-size: 19px;
+            line-height: 25px;
+            font-weight: 400;
+            font-family: 'Work Sans', sans-serif;
+            padding-right: 30px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            background: #000;
+            color: #fff;
+        }
+        ul, ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-scroll-up {
+            display: grid;
+            grid-template-columns: 32em 1fr;
+            max-width: 100em;
+            width: 90%;
+            margin: 0 auto;
+        }
+        @media (max-width: 900px){
+            .main-scroll-up {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 0 50px;
+            }
+            .main-scroll-up > nav {
+                position: sticky;
+                top: -1em;
+            }
+            .main-scroll-up nav{
+                
+                height: auto;
+                background-color: #000;
+                padding-top: 120px ;
+            }
+            
+            .section-nav ol{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .section-nav a {
+                font-size: 20px;
+                margin-right: 20px;
+            }
+            .section-nav ol li a i{
+                margin-right: 20px;
+                margin-bottom: 0px;
+            }
+            .section-nav a:hover,
+            .section-nav a:focus {
+                color: #fff;
+                font-size: 20px;
+                line-height: 40px;
+                font-weight: 700;
+            }
+        }
+        @media (max-width: 500px){
+            .main-scroll-up{
+                padding: 0 20px;
+            }
+            .section-nav a {
+                font-size: 15px;
+                margin-right: 15px;
+                padding-left: 15px;
+            }
+            .section-nav a:hover,
+            .section-nav a:focus {
+                
+                font-size: 15px;
+          
+            }
+            .section-nav li.active a{
+                border-left: 1px solid #26C6BA !important;
+            }
+            .content-height h2 {
+                font-size: 25px !important;
+            }
+            .content-height p {
+                font-size: 15px;
+                padding-right: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main class="main-scroll-up">
+        <nav class="section-nav">
+            <ol>
+                <li><a href="#introduction"><i class="fas fa-paint-brush"></i> Creative</a></li><br><br><br>
+                <li><a href="#request-response"><i class="far fa-chart-bar"></i> Media</a></li><br><br><br>
+                <li><a href="#authentication"><i class="fas fa-cog"></i> Strategy</a></li><br><br><br>
+                <li><a href="#endpoints"><i class="fas fa-hands-helping"></i> Consulting</a></li>
+            </ol>
+        </nav>
+        <div>
+            <section class="content-height" >
+                <h2 id="introduction">Curiosity unleashed</h2>
+                <p>A truly consumer-centric storytelling engine. We lean on the power of all our creative ideas, both client and agency to find “right” based on consumer reactions vs guessing and having to be right with our opinions and subjectivity. The result? Powerful creative that works born from the consumer up.  We are a modern mix of traditional Madison Avenue thinkers of yesterday and internet-centric storytellers of today who believe a single tweet can go all the way to a Super Bowl commercial. So we pay equal respect to both.</p>
+            </section>
+            <section class="content-height" >
+                <h2 id="request-response">Business outcomes. Not potential reach.</h2>
+                <p>We’re relentlessly focused on one thing: driving business results for brands.  This means having a deep respect and intimate knowledge of channels where consumers are spending their time, and building modern planning, buying and analytics disciplines that drive consumers to act.  While the industry has been built on reach and efficiency, we’re upending the model, to understand attention, relevance and results.</p>
+            </section>
+            <section class="content-height">
+                <h2  id="authentication">We’re about people</h2>
+                <p>We put human beings at the forefront of everything we do, ensuring our ideas and plans are culturally rich and consumer-led.   We approach strategy with practicality, humility and empathy. We believe that brands today can’t rely on a single, generic message served to a mass audience, the most effective way to drive relevance and growth is by speaking specifically and differently to people based on who they are, by listening and understanding.</p>
+            </section>
+            <section class="content-height" >
+                <h2 id="endpoints">Borrow our brains</h2>
+                <p>Deep-dive into the current state of consumer attention and immerse your team in emerging areas of culture to gain an in-depth understanding of what it takes to drive relevance in today’s landscape. You’ll work alongside some of the most seasoned, progressive and consumer-obsessed strategists, creators and media platform specialists in the industry to unlock modern solutions to your biggest business challenges. Walk away with a volume of actionable ideas that can be put into market and a robust, strategic roadmap for how to build sustainable relevance for your brand across a broad spectrum of consumers.</p>
+            </section>
+        </div>
+        
+    </main>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    if (entry.intersectionRatio > 0) {
+                        document.querySelector(`nav li a[href="#${id}"]`)
+                        .parentElement.classList.add('active');
+                    } else {
+                        document.querySelector(`nav li a[href="#${id}"]`)
+                        .parentElement.classList.remove('active');
+                    }
+                });
+            });
+            // Track all sections that have an `id` applied
+            document.querySelectorAll('h2[id]').forEach((section) => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
